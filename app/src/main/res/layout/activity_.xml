@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".ACtivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="407dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/REC1"
+            android:layout_width="407dp"
+            android:layout_height="300dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewpager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewpager">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/IMAG1"
+            android:layout_width="407dp"
+            android:layout_height="300dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewpager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewpager">
+
+        </ImageView>
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager2"
+        android:layout_width="407dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewpager"
+        app:layout_constraintVertical_bias="0.278" >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/REC2"
+            android:layout_width="407dp"
+            android:layout_height="300dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewpager2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/IMA2"
+            android:layout_width="407dp"
+            android:layout_height="300dp"
+            app:layout_constraintBottom_toBottomOf="@+id/viewpager2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/viewpager2">
+
+        </ImageView>
+    </androidx.viewpager.widget.ViewPager>
+
+    <ImageView
+        android:id="@+id/addone"
+        android:layout_width="60dp"
+        android:layout_height="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/viewpager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/greenaddbutn" />
+
+    <ImageView
+        android:id="@+id/CameraOne"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addone"
+        app:layout_constraintEnd_toStartOf="@+id/addone"
+        app:layout_constraintTop_toTopOf="@+id/addone"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <ImageView
+        android:id="@+id/Galleryone"
+        android:layout_width="33dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/CameraOne"
+        app:layout_constraintEnd_toStartOf="@+id/CameraOne"
+        app:layout_constraintTop_toTopOf="@+id/CameraOne"
+        app:srcCompat="@drawable/ic_baseline_photo_library_24" />
+
+    <ImageView
+        android:id="@+id/AddTwo"
+        android:layout_width="67dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewpager2"
+        app:layout_constraintVertical_bias="0.312"
+        app:srcCompat="@drawable/greenaddbutn" />
+
+    <ImageView
+        android:id="@+id/CameraTwo"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/AddTwo"
+        app:layout_constraintEnd_toStartOf="@+id/AddTwo"
+        app:layout_constraintTop_toTopOf="@+id/AddTwo"
+        app:layout_constraintVertical_bias="0.407"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <ImageView
+        android:id="@+id/GalleryTo"
+        android:layout_width="37dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/CameraTwo"
+        app:layout_constraintEnd_toStartOf="@+id/CameraTwo"
+        app:layout_constraintTop_toTopOf="@+id/CameraTwo"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_photo_library_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

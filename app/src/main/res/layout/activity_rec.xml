@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rec">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="413dp"
+        android:layout_height="299dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="413dp"
+        android:layout_height="250dp"
+        android:layout_marginBottom="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SHUFFLE"
+        app:layout_constraintVertical_bias="0.0"
+  />
+
+    <ImageView
+        android:id="@+id/ADDONE"
+        android:layout_width="34dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/greenaddbutn" />
+
+    <ImageView
+        android:id="@+id/ADDTWO"
+        android:layout_width="34dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView2"
+        app:srcCompat="@drawable/greenaddbutn" />
+
+    <ImageView
+        android:id="@+id/SHUFFLE"
+        android:layout_width="45dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/FAV"
+        app:layout_constraintHorizontal_bias="0.564"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:srcCompat="@drawable/sfuule" />
+
+    <ImageView
+        android:id="@+id/FAV"
+        android:layout_width="42dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:srcCompat="@drawable/ywllohesrt" />
+
+    <ImageView
+        android:id="@+id/IMAGEONE"
+        android:layout_width="414dp"
+        android:layout_height="301dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recyclerView"
+        app:srcCompat="@drawable/ic_baseline_insert_photo_24" />
+
+    <ImageView
+        android:id="@+id/IMAGETWO"
+        android:layout_width="407dp"
+        android:layout_height="248dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SHUFFLE"
+        app:srcCompat="@drawable/ic_baseline_insert_photo_24" />
+
+    <ImageView
+        android:id="@+id/CAMERAONE"
+        android:visibility="gone"
+
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ADDONE"
+        app:layout_constraintEnd_toStartOf="@+id/ADDONE"
+        app:layout_constraintTop_toTopOf="@+id/ADDONE"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <ImageView
+        android:id="@+id/GALLONE"
+        android:layout_width="36dp"
+        android:layout_height="31dp"
+        android:visibility="gone"
+
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/CAMERAONE"
+        app:layout_constraintEnd_toStartOf="@+id/CAMERAONE"
+        app:layout_constraintTop_toTopOf="@+id/CAMERAONE"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_photo_library_24" />
+
+    <ImageView
+        android:id="@+id/CAMERATWO"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ADDTWO"
+        app:layout_constraintEnd_toStartOf="@+id/ADDTWO"
+        android:visibility="gone"
+
+        app:layout_constraintTop_toTopOf="@+id/ADDTWO"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/ic_baseline_camera_alt_24" />
+
+    <ImageView
+        android:id="@+id/GALLTWO"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="24dp"
+
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="@+id/CAMERATWO"
+        app:layout_constraintEnd_toStartOf="@+id/CAMERATWO"
+        app:layout_constraintTop_toTopOf="@+id/CAMERATWO"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_photo_library_24" />
+
+    <TextView
+        android:id="@+id/UPLOADone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="UPLOAD"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="@+id/ADDONE"
+        app:layout_constraintEnd_toStartOf="@+id/GALLONE"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ADDONE"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <TextView
+        android:id="@+id/UPLOADtwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+
+        android:layout_marginEnd="20dp"
+        android:text="UPLOAD"
+        app:layout_constraintBottom_toBottomOf="@+id/ADDTWO"
+        app:layout_constraintEnd_toStartOf="@+id/GALLTWO"
+        app:layout_constraintTop_toTopOf="@+id/ADDTWO"
+        app:layout_constraintVertical_bias="0.642" />
+</androidx.constraintlayout.widget.ConstraintLayout>
